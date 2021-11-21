@@ -20,4 +20,28 @@
 			</div>
 		</div>
 	</div>
+
+	<div class='col-md-8'>
+		<table class='table'>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Description</th>
+					<th>Operations</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each photos}}
+					<tr>
+						<td>{{title}}</td>
+						<td>{{description}}</td>
+						<td>
+							<a href='{{imageURL}}' target='_blank' class='btn btn-primary'>View</a>
+							<a href='' class='btn btn-danger'>Delete</a>
+						</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
 </div>
