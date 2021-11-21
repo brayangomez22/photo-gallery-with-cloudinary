@@ -1,0 +1,23 @@
+<div class='row'>
+	<div class='col-md-4'>
+		<div class='card'>
+			<div class='card-body'>
+				<form action='/images/add' method='post' enctype='multipart/form-data'>
+					<div class='form-group'>
+						<input type='text' name='title' class='form-control' placeholder='Image Title' />
+					</div>
+					<div class='form-group'>
+						<textarea class='form-control' name='description' placeholder='Image Description'></textarea>
+					</div>
+					<div class='input-group mb-3'>
+						<div class='custom-file'>
+							<input type='file' name='image' class='custom-file-input' id='inputGroupFile01' />
+							<label for='inputGroupFile01' class='custom-file-label'>Choose File</label>
+						</div>
+					</div>
+					<button class='btn btn-primary'>Upload Photo</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
